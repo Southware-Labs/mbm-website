@@ -4,11 +4,15 @@
     <link rel="icon" type="image/png" href="./resources/Logo_1.jpg" />
     <title>MBM - Soluciones Contables</title>
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="./css/materialize.min.css" />
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./css/styles.min.css" />
     <meta charset="UTF-8" />
     <meta
       name="viewport"
@@ -33,7 +37,7 @@
       <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo"
           ><img
-            src="./resources/Logo_1.jpg"
+            src="./resources/Logo_1.webp"
             height="50px"
             style="vertical-align: middle; padding: 3px 0px 3px 0px"
         /></a>
@@ -66,37 +70,42 @@
     <div id="index-banner" class="parallax-container fullScreenHeight">
       <div class="section no-pad-bot halfScreenHeightInner">
         <div class="container">
-          <br /><br />
-          <div class="main-title-container">
-            <h1 class="header center text-lighten-2">
-              Abrimos <br class="hide-on-large-only" />
-              <div id="text"></div>
-              <div id="cursor"></div>
-            </h1>
+          <div class="hero-content">
+            <div class="main-title-container">
+              <h1 class="header center text-lighten-2 hero-title">
+                Abrimos <br />
+                <div id="text"></div>
+                <div id="cursor"></div>
+              </h1>
+            </div>
+            <div class="row center">
+              <div class="hero-subtitle-wrapper">
+                <h5 class="subheader col s12 light hero-subtitle">
+                  Somos parte de su equipo. En MBM queremos apoyarle desde el
+                  comienzo, brindándole siempre la atención personalizada que
+                  merece. <br />
+                  Le acompañamos desde la apertura de la empresa y durante todo su
+                  crecimiento.
+                </h5>
+              </div>
+            </div>
+            <div class="row center">
+              <a
+                href="#contact"
+                id="download-button"
+                class="btn-large waves-effect waves-light hero-cta-btn"
+              >
+                <i class="material-icons left">chat</i>
+                ¡Agende una consulta sin costo!
+                <i class="material-icons right">arrow_forward</i>
+              </a>
+            </div>
           </div>
-          <div class="row center">
-            <h5 class="subheader col s12 light">
-              Somos parte de su equipo. En MBM queremos apoyarle desde el
-              comienzo, brindándole siempre la atención personalizada que
-              merece. <br />
-              Le acompañamos desde la apertura de la empresa y durante todo su
-              crecimiento.
-            </h5>
-          </div>
-          <div class="row center">
-            <a
-              href="#contact"
-              id="download-button"
-              class="btn-large waves-effect waves-light lighten-1"
-              >¡Agende una consulta sin costo!</a
-            >
-          </div>
-          <br /><br />
         </div>
       </div>
-      <div class="parallax">
+      <div class="parallax darker">
         <img
-          src="./resources/background1.jpg"
+          src="./resources/background1.webp"
           alt="Unsplashed background img 1"
         />
       </div>
@@ -175,19 +184,12 @@
     <!-- Section 2 -->
     <div class="parallax-container valign-wrapper">
       <div class="section no-pad-bot halfScreenHeightInner">
-        <div class="container">
-          <!-- <div class="row center">
-            <h5 class="subheader col s12 light">
-              “Lo más hermoso del trabajo en equipo es que siempre tienes a
-              otros de tu lado"
-            </h5>
-            <small class="subheader">-Margaret Carty-</small>
-          </div> -->
-        </div>
+        <div class="container"></div>
       </div>
       <div class="parallax">
         <img
-          src="./resources/background2.jpg"
+          loading="lazy"
+          src="./resources/background2.webp"
           alt="Unsplashed background img 2"
         />
       </div>
@@ -238,19 +240,12 @@
     <!-- Section 4 -->
     <div class="parallax-container valign-wrapper">
       <div class="section no-pad-bot halfScreenHeightInner">
-        <div class="container">
-          <!-- <div class="row center">
-            <h5 class="subheader col s12 light">
-              “No puede impedirse el viento, pero hay que saber construir
-              molinos”
-            </h5>
-            <small class="subheader">-Proverbio holandés-</small>
-          </div> -->
-        </div>
+        <div class="container"></div>
       </div>
       <div class="parallax">
         <img
-          src="resources/background3.jpg"
+          loading="lazy"
+          src="resources/background3.webp"
           alt="Unsplashed background img 3"
         />
       </div>
@@ -475,9 +470,9 @@
                       <li>
                         <strong>Correo electrónico:</strong> empresas@mbm.com.uy
                       </li>
-                      <li><strong>WhatsApp:</strong> (+598) 092 823 813</li>
+                      <li><strong>WhatsApp:</strong> (+598) 096 800 977</li>
                       <li>
-                        <strong>Llamada telefónica:</strong> (+598) 092 823 813
+                        <strong>Llamada telefónica:</strong> (+598) 096 800 977
                       </li>
                     </ul>
                   </div>
@@ -496,90 +491,76 @@
           <div class="col s12 center">
             <hr />
             <h3><i class="mdi-content-send brown-text"></i></h3>
-            <h4>Realice una consulta</h4>
+            <h4>Contáctenos por WhatsApp</h4>
             <p class="light">
-              Puede utilizar el siguiente formulario de contacto para realizar
-              cualquier consulta que desee. ¡Nuestro equipo recibirá su mensaje
-              y se pondrá en contacto con usted lo más pronto posible!
+              ¿Tiene alguna consulta? ¡Escríbanos directamente por WhatsApp y
+              nuestro equipo le responderá lo más pronto posible!
             </p>
             <div class="row">
-              <div class="col m12 l4 offset-l1">
-                <h6>¡Escríbanos!</h6>
-                <p class="light">
-                  ¡Si tiene alguna consulta, no dude en escribirnos!
-                </p>
-                <p class="light">
-                  Nuestro equipo de profesionales recibirá su consulta y se
-                  contactará con usted a la dirección de correo electrónico
-                  provista.
-                </p>
-                <p class="light">
-                  Por favor, asegúrese de agregar todos los detalles relevantes
-                  a su consulta en el cuerpo del correo.
-                </p>
+              <div class="col s12 m10 offset-m1 l8 offset-l2">
+                <div class="whatsapp-contact-card">
+                  <div class="row">
+                    <div class="col s12 m6">
+                      <div class="whatsapp-info">
+                        <i class="material-icons whatsapp-icon">chat</i>
+                        <h5>¡Estamos aquí para ayudarle!</h5>
+                        <p class="light">
+                          Nuestro equipo de profesionales está disponible para
+                          responder todas sus consultas sobre:
+                        </p>
+                        <ul class="whatsapp-services">
+                          <li>
+                            <i class="material-icons tiny">check_circle</i>
+                            Apertura de empresas
+                          </li>
+                          <li>
+                            <i class="material-icons tiny">check_circle</i>
+                            Servicios contables
+                          </li>
+                          <li>
+                            <i class="material-icons tiny">check_circle</i>
+                            Liquidación de sueldos
+                          </li>
+                          <li>
+                            <i class="material-icons tiny">check_circle</i>
+                            Declaraciones de impuestos
+                          </li>
+                          <li>
+                            <i class="material-icons tiny">check_circle</i>
+                            Asesoramiento general
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col s12 m6">
+                      <div class="whatsapp-cta">
+                        <div class="whatsapp-phone">
+                          <i class="material-icons">phone_android</i>
+                          <span class="phone-number">(+598) 096 800 977</span>
+                        </div>
+                        <p class="light">
+                          Haga clic en el botón para iniciar una conversación
+                          con nosotros
+                        </p>
+                        <a
+                          href="https://wa.me/59896800977?text=Hola%2C%20me%20gustar%C3%ADa%20realizar%20una%20consulta%20sobre%20sus%20servicios"
+                          target="_blank"
+                          class="btn-large waves-effect waves-light whatsapp-btn"
+                        >
+                          <i class="material-icons left">chat</i>
+                          Abrir WhatsApp
+                        </a>
+                        <p class="light contact-alternative">
+                          También puede escribirnos a<br />
+                          <a href="mailto:empresas@mbm.com.uy"
+                            >empresas@mbm.com.uy</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-
-              <form
-                class="col m12 l6 offset-l1"
-                action="https://formspree.io/f/xjvjgwjd"
-                method="POST"
-              >
-                <div class="row marginBottomZero">
-                  <div class="input-field col s12">
-                    <i class="material-icons prefix">account_circle</i>
-                    <input
-                      id="icon_prefix"
-                      type="text"
-                      class="validate"
-                      name="name"
-                      required
-                    />
-                    <label for="icon_prefix">Su nombre completo</label>
-                  </div>
-                </div>
-                <div class="row marginBottomZero">
-                  <div class="input-field col s12">
-                    <i class="material-icons prefix">email</i>
-                    <input
-                      id="email"
-                      type="email"
-                      class="validate"
-                      name="_replyto"
-                      required
-                    />
-                    <label for="email"
-                      >Su dirección de correo electrónico</label
-                    >
-                    <span
-                      class="helper-text"
-                      data-error="La dirección de correo ingresada no tiene un formato válido"
-                      data-success="Recibirá la respuesta a su mensaje en esta dirección de correo."
-                      >Debe ingresar una dirección de correo electrónico válida
-                      donde desea recibir la respuesta.</span
-                    >
-                  </div>
-                </div>
-                <div class="row marginBottomZero">
-                  <div class="input-field col s12">
-                    <i class="material-icons prefix">chat</i>
-                    <textarea
-                      id="textarea1"
-                      class="materialize-textarea"
-                      name="message"
-                      required
-                    ></textarea>
-                    <label for="textarea1">Su mensaje</label>
-                  </div>
-                </div>
-                <button
-                  class="btn waves-effect waves-light"
-                  type="submit"
-                  name="action"
-                >
-                  Enviar
-                  <i class="material-icons right white-text">send</i>
-                </button>
-              </form>
             </div>
           </div>
         </div>
@@ -609,8 +590,8 @@
             <h5 class="white-text">Contacto</h5>
             <ul>
               <li class="marginTopAndBottom">
-                <i class="material-icons white-text">smartphone</i> (+598) 092
-                823 813
+                <i class="material-icons white-text">smartphone</i> (+598) 096
+                800 977
               </li>
               <li class="marginTopAndBottom">
                 <i class="material-icons white-text">email</i>
@@ -693,8 +674,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/59896800977?text=Hola%2C%20me%20gustar%C3%ADa%20realizar%20una%20consulta%20sobre%20sus%20servicios"
+      target="_blank"
+      class="floating-whatsapp-btn"
+      aria-label="Contactar por WhatsApp"
+    >
+      <i class="material-icons">chat</i>
+      <span class="floating-whatsapp-tooltip">¡Chatea con nosotros!</span>
+    </a>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="./js/materialize.min.js"></script>
-  <script src="./js/scripts.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./js/scripts.min.js"></script>
 </html>
